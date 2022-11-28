@@ -15,7 +15,7 @@ double[] CreateArray (int size, double min, double max)
 double [] array = CreateArray(20,-100,100);
 
 Console.WriteLine(String.Join(" ", array));
-d
+
 double DiffMaxMin (double [] array)
 {
     double max = array [0];
