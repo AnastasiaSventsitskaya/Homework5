@@ -7,7 +7,7 @@ double[] CreateArray (int size, double min, double max)
     double[] array = new double [size];
     for (int i = 0; i < size; i++)
    {
-      array[i] = (new Random().NextDouble()) * (max - min) + min;
+      array[i] =Math.Round((new Random().NextDouble()) * (max - min) + min, 2);
    }
    return array;
 }
@@ -15,12 +15,11 @@ double[] CreateArray (int size, double min, double max)
 double [] array = CreateArray(20,-100,100);
 
 Console.WriteLine(String.Join(" ", array));
-
+d
 double DiffMaxMin (double [] array)
 {
     double max = array [0];
     double min = array [0];
-    double diff = 0;
     for (int i = 1; i < array.Length; i++)
     {
         if (array[i] > max)
